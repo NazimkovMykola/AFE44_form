@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form id="myFirstForm">
+        <h2>Login</h2>
+        <label>Login
+            <input name="login" id="login" type="text" placeholder="Login" />
+        </label>
+        <label>Password
+            <input id="pass" type="password" placeholder="Password" name="password" />
+            <img class="view" src="view.png" alt="icon view">
+        </label>
+        <label id="checkAgree">
+            <input type="checkbox" name="agree" id="agree">
+            I agree
+        </label>
+        <fieldset>
+            <legend>Please select one options</legend>
+            <label id="three">
+                <input id="one" type="radio" name="one" value="one">
+                One
+            </label>
+            <label id="one">
+                <input id="two" type="radio" name="two" value="one">
+                Two
+            </label>
+            <label id="two">
+                <input id="three" type="radio" name="three" value="one">
+                Three
+            </label>
+        </fieldset>
+        <label>
+            Select size
+            <select name="select" id="select">
+                <option value="X"> Size X</option>
+                <option value="M"> Size M</option>
+                <option value="XL"> Size XL</option>
+            </select>
+        </label>
+        <label>
+            Email
+            <input id="email" type="email" name="email">
+        </label>
+        <label>
+            Number
+            <input id="number" type="number" name="number">
+        </label>
+        <div>
+            <input type="range" id="persent" name="persent" min="0" max="100" />
+            <label for="volume">Persent</label>
+        </div>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <button class="submit" type="submit">Sign up</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
